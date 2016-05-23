@@ -83,7 +83,7 @@ object Boot {
 
 		val t2 = System.currentTimeMillis()
 
-		println("Took: "+(t2-t1))
+		println("Took : "+(t2-t1))
 
 		val data2:DataFrame = sc.cassandraTable[Data]("spark","data").toDF()
 		data2.toDF().registerTempTable("data")
