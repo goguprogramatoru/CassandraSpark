@@ -61,7 +61,7 @@ object Boot {
 		})
 		session.close()
 		cluster.close()
-		println("done")
+		println("done!")
 	}
 
 	def test1() = {
